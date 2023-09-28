@@ -9,22 +9,23 @@ int main()
 	float monto =0;
 	float impuesto= 0;
 	float total = 0;
-	char sin_pagar;
+	float subtotal = 0;
+	char estaExenta;
 	
 	cout << " Ingrese el valor de la compra: " << endl;
 	cin  >>   monto;
 	
-	cout << " La factura de esta excenta es de? S o N: " << endl;
-	cin >> sin_pagar;
+	cout << " La factura de esta exenta es de? S / N: " << endl;
+	cin >> subtotal;
 	
-	if(sin_pagar =='S'|| sin_pagar =='s')
+	if(estaExenta =='S'|| estaExenta =='s')
 	{	
 	impuesto = monto *0.15;
 	total = monto + impuesto;
 	}
 	
 	else
-	if(sin_pagar=='S'|| sin_pagar== 's')
+	if(estaExenta=='S'|| estaExenta== 's')
 	{
 	total = monto;
 	}
