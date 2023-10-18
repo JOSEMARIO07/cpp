@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int sumar(int a, int b ){
+int isumar(int a, int b ){
     return a + b;
   }
 
